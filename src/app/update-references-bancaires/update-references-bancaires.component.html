@@ -1,0 +1,46 @@
+<div class="container">
+
+    <form >
+        <div hidden class="col-sm-2 col-md-2 col-lg-2">
+           <label >ID References Bancaires</label>
+            <input type="number" [(ngModel)]="currentReferenceBancaire.idReferenceBancaire" name="idReferenceBancaire" class="form-control">
+         </div>
+
+        <div class="col-sm-4 col-md-4 col-lg-4" >
+             <label >BANQUE</label>
+            <input type="text"[(ngModel)]= "currentReferenceBancaire.banqueReferenceBancaire" name="banqueReferenceBancaire" class="form-control">
+        </div>
+
+        <div class="col-sm-4 col-md-4 col-lg-4">
+            <label >CODE BANQUE</label>
+            <input type="text" [(ngModel)]= "currentReferenceBancaire.codeBanqueReferenceBancaire"
+                  name="codeBanqueReferenceBancaire" class="form-control">
+        </div>
+
+        <div class="col-sm-4 col-md-4 col-lg-4">
+            <label >CODE GUICHET</label>
+            <input type="number" [(ngModel)]= "currentReferenceBancaire.codeguichetReferenceBancaire"
+            name="codeguichetReferenceBancaire" class="form-control">
+        </div>
+
+        <div class="col-sm-4 col-md-4 col-lg-4">
+            <label >N°COMPTE</label>
+            <input type="number" [(ngModel)]= "currentReferenceBancaire.numCompteReferenceBancaire"
+            name="numCompteReferenceBancaire" class="form-control">
+        </div>
+
+        <div class="col-sm-4 col-md-4 col-lg-4">
+            <label >CLE RIB</label>
+            <input type="number" [(ngModel)]= "currentReferenceBancaire.cleReferenceBancaire"
+            name="adresseMandataire" class="form-control">
+        </div>
+
+        <div class="mt-2">
+            <p style="color: brown;">Cliquer sur le bouton Modifier en fin de saisie.</p><hr>
+            <button type="submit"  (click)="updateReferenceBancaire()"  class="btn btn-success">Modifier</button>
+            <!--<div><h3>{{message}}</h3></div>-->
+    </div>
+        <hr>
+        
+    </form>
+</div>

@@ -1,0 +1,69 @@
+<div class="container">
+
+    <form >
+        <div hidden class="col-sm-2 col-md-2 col-lg-2">
+           <label >ID Representant</label>
+            <input type="number" [(ngModel)]="currentRepresentant.idRepresentant" name="idRepresentant" class="form-control">
+         </div>
+
+        <div class="col-sm-4 col-md-4 col-lg-4" >
+             <label >CIVILITE</label>
+            <input type="text"[(ngModel)]= "currentRepresentant.civiliteRepresentant" name="civiliteRepresentant" class="form-control">
+        </div>
+
+        <div class="col-sm-4 col-md-4 col-lg-4">
+            <label >PRENOM</label>
+            <input type="text" [(ngModel)]= "currentRepresentant.prenomRepresentant"
+                  name="prenomRepresentation" class="form-control">
+        </div>
+
+        <div class="col-sm-4 col-md-4 col-lg-4">
+            <label >NOM</label>
+            <input type="text" [(ngModel)]= "currentRepresentant.nomRepresentant"
+            name="nomRepresentation" class="form-control">
+        </div>
+
+        <div class="col-sm-4 col-md-4 col-lg-4">
+            <label >FONCTION</label>
+            <input type="text" [(ngModel)]= "currentRepresentant.fonctionRepresentant"
+            name="fonctionRepresentation" class="form-control">
+        </div>
+
+        <div class="col-sm-4 col-md-4 col-lg-4">
+            <label >EMAIL</label>
+            <input type="text" [(ngModel)]= "currentRepresentant.emailRepresentant"
+            name="emailRepresentant" class="form-control">
+        </div>
+
+        <div class="col-sm-4 col-md-4 col-lg-4">
+            <label >TEL FIXE</label>
+            <input type="number" [(ngModel)]= "currentRepresentant.telephoneFixeRepresentant"
+            name="telephoneFixeRepresentant" class="form-control">
+        </div>
+
+        <div class="col-sm-4 col-md-4 col-lg-4">
+            <label >N°POSTE</label>
+            <input type="number" [(ngModel)]= "currentRepresentant.posteRepresentant"
+            name="posteRepresentant" class="form-control">
+        </div>
+
+        <div class="col-sm-4 col-md-4 col-lg-4">
+            <label >TEL MOBILE</label>
+            <input type="number" [(ngModel)]= "currentRepresentant.telephoneMobileRepresentant"
+            name="telephoneMobileRepresentant" class="form-control">
+        </div>
+
+        <div class="col-sm-4 col-md-4 col-lg-4">
+            <label >HABILITATION</label>
+            <input type="text" [(ngModel)]= "currentRepresentant.habilitationRepresentant"
+            name="habilitationRepresentant" class="form-control">
+        </div>
+
+        <div class="mt-2">
+            <p style="color: brown;">Cliquer sur le bouton Modifier en fin de saisie.</p><hr>
+            <button type="submit"  (click)="updateRepresentant()"  class="btn btn-success">Modifier</button>
+            <!--<div><h3>{{message}}</h3></div>-->
+    </div>
+        <hr>
+    </form>
+</div>

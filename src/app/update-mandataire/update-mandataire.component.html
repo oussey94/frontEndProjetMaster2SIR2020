@@ -1,0 +1,58 @@
+<div class="container">
+
+    <form >
+        <div hidden class="col-sm-2 col-md-2 col-lg-2">
+           <label >ID Mandataire</label>
+            <input type="number" [(ngModel)]="currentMandataire.idMandataire" name="idMandataire" class="form-control">
+         </div>
+
+        <div class="col-sm-4 col-md-4 col-lg-4" >
+             <label >CIVILITE</label>
+            <input type="text"[(ngModel)]= "currentMandataire.civiliteMandataire" name="civiliteMandataire" class="form-control">
+        </div>
+
+        <div class="col-sm-4 col-md-4 col-lg-4">
+            <label >DENOMINATION</label>
+            <input type="text" [(ngModel)]= "currentMandataire.denominationMandataire"
+                  name="denominationMandataire" class="form-control">
+        </div>
+
+        <div class="col-sm-4 col-md-4 col-lg-4">
+            <label >EN QUALITE DE (FONCTION EXERCEE)</label>
+            <input type="text" [(ngModel)]= "currentMandataire.fonctionMandataire"
+            name="fonctionMandataire" class="form-control">
+        </div>
+
+        <div class="col-sm-4 col-md-4 col-lg-4">
+            <label >ENTREPRISE</label>
+            <input type="text" [(ngModel)]= "currentMandataire.entrepriseMandataire"
+            name="entrepriseMandataire" class="form-control">
+        </div>
+
+        <div class="col-sm-4 col-md-4 col-lg-4">
+            <label >ADRESSE</label>
+            <input type="text" [(ngModel)]= "currentMandataire.adresseMandataire"
+            name="adresseMandataire" class="form-control">
+        </div>
+
+        <div class="col-sm-4 col-md-4 col-lg-4">
+            <label >POUR LE COMPTE DE</label>
+            <input type="text" [(ngModel)]= "currentMandataire.compteDeMandataire"
+            name="compteDeMandataire" class="form-control">
+        </div>
+
+        <div class="col-sm-4 col-md-4 col-lg-4">
+            <label >TYPE DE MANDAT</label>
+            <input type="text" [(ngModel)]= "currentMandataire.typeMandatMandataire"
+            name="typeMandatMandataire" class="form-control">
+        </div>
+
+        <div class="mt-2">
+            <p style="color: brown;">Cliquer sur le bouton Modifier en fin de saisie.</p><hr>
+            <button type="submit"  (click)="updateMandataire()"  class="btn btn-success">Modifier</button>
+            <!--<div><h3>{{message}}</h3></div>-->
+    </div>
+        <hr>
+        
+    </form>
+</div>

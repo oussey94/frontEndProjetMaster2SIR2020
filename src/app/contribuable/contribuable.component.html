@@ -1,0 +1,138 @@
+<div class="container">
+
+    <form #monForm="ngForm">
+        
+        <div hidden class="col-sm-4 col-md-4 col-lg-4">
+           <label >ID Contribuable</label>
+            <input type="number" [(ngModel)]="newContribuable.idContribuable" name="idContribuable" class="form-control">
+         </div>
+         <div class="form-row">
+        <div class="col-sm-4 col-md-4 col-lg-4" >
+             <label >CIVILITE</label>
+            <input type="text"[(ngModel)]= "newContribuable.civiliteContribuable" name="civiliteContribuable" class="form-control" required>
+        </div>
+    
+
+        <div class="col-sm-4 col-md-4 col-lg-4">
+            <label >PRENOM</label>
+            <input type="text" [(ngModel)]= "newContribuable.prenomContribuable"
+                  name="prenomContribuable" class="form-control" required>
+        </div>
+    
+
+        <div class="col-sm-4 col-md-4 col-lg-4">
+            <label >NOM</label>
+            <input type="text" [(ngModel)]= "newContribuable.nomContribuable"
+            name="nomContribuable" class="form-control" required>
+        </div>
+    </div>
+    <div class="form-row">
+
+        <div class="col-sm-4 col-md-4 col-lg-4">
+            <label >FONCTION</label>
+            <input type="text" [(ngModel)]= "newContribuable.fonctionContribuable"
+            name="fonctionContribuable" class="form-control" required>
+        </div>
+
+        <div class="col-sm-4 col-md-4 col-lg-4">
+            <label >E-mail</label>
+            <input type="text" [(ngModel)]= "newContribuable.emailContribuable"
+            name="emailContribuable" class="form-control" required>
+        </div>
+
+        <div class="col-sm-4 col-md-4 col-lg-4">
+            <label >TEL MOBILE</label>
+            <input type="number" [(ngModel)]= "newContribuable.telephoneContribuable"
+            name="telephoneContribuable" class="form-control" required>
+        </div>
+    </div>
+    <div class="form-row">
+       
+        <div class="col-sm-4 col-md-4 col-lg-4">
+            <label >AGISSANT POUR LE COMPTE DE L'ENTREPRISE</label>
+            <input type="text" [(ngModel)]= "newContribuable.representantContribuable"
+            name="representantContribuable" class="form-control" required>
+        </div>
+
+        <div class="col-sm-4 col-md-4 col-lg-4">
+            <label >ACTIVITE PRINCIPALE</label>
+            <input type="text" [(ngModel)]= "newContribuable.activateContribuable"
+            name="activateContribuable" class="form-control" required>
+        </div>
+
+        <div class="col-sm-4 col-md-4 col-lg-4">
+            <label >ADRESSE DU SIEGE N°</label>
+            <input type="number" [(ngModel)]= "newContribuable.adresseContribuable"
+            name="adresseContribuable" class="form-control" required>
+        </div>
+    </div>
+    <div class="form-row">
+
+
+        <div class="col-sm-4 col-md-4 col-lg-4">
+            <label >TYPE DE VOIE</label>
+            <input type="text" [(ngModel)]= "newContribuable.voieContribuable"
+            name="voieContribuable" class="form-control" required>
+        </div>
+
+        <div class="col-sm-4 col-md-4 col-lg-4">
+            <label >NOM DE LA VOIE</label>
+            <input type="text" [(ngModel)]= "newContribuable.nomVoieContribuable"
+            name="nomVoieContribuable" class="form-control" required>
+        </div>
+
+        <div class="col-sm-4 col-md-4 col-lg-4">
+            <label >IMMEUBLE</label>
+            <input type="text" [(ngModel)]= "newContribuable.immeubleContribuable"
+            name="immeubleContribuable" class="form-control" required>
+        </div>
+    </div>
+    <div class="form-row">
+
+
+        <div class="col-sm-4 col-md-4 col-lg-4">
+            <label >QUARTIER</label>
+            <input type="text" [(ngModel)]= "newContribuable.cartierContribuable"
+            name="cartierContribuable" class="form-control" required>
+        </div>
+
+        <div class="col-sm-4 col-md-4 col-lg-4">
+            <label >COMMUNE</label>
+            <input type="text" [(ngModel)]= "newContribuable.communeContribuable"
+            name="communeContribuable" class="form-control" required>
+        </div>
+
+        <div class="col-sm-4 col-md-4 col-lg-4">
+            <label >BOITE POSTALE</label>
+            <input type="number" [(ngModel)]= "newContribuable.boitePostaleContribuable"
+            name="boitePostaleContribuable" class="form-control" required>
+        </div>
+    </div>
+    <div class="form-row">
+
+
+        <div class="col-sm-4 col-md-4 col-lg-4">
+            <label >NINEA</label>
+            <input type="number" [(ngModel)]= "newContribuable.nineaContribuable"
+            name="nineaContribuable" class="form-control" required>
+        </div>
+
+        <div class="col-sm-4 col-md-4 col-lg-4">
+            <label >COFI</label>
+            <input type="number" [(ngModel)]= "newContribuable.cofiContribuable"
+            name="cofiContribuable" class="form-control" required>
+        </div>
+        
+        <div class="col-sm-4 col-md-4 col-lg-4">
+            <label >CENTRE</label>
+            <input type="text" [(ngModel)]= "newContribuable.centreContribuable"
+            name="centreContribuable" class="form-control" required>
+        </div>
+    </div>
+
+
+        <div class="mt-2">
+                <button type="submit" [disabled]="monForm.invalid"   (click)="addContribuable()"  class="btn btn-success">Ajouter</button>
+        </div>
+    </form>
+</div>
